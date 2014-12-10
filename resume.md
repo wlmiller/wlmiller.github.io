@@ -19,7 +19,7 @@ RigMinder provides fully automated and wireless data management and capture tech
 * PIC microcontroller firmware (C)
 * Data management and analysis (Python)
 * Database management (PostgreSQL)
-* Web applications (Javascript, PHP)
+* Web applications (JavaScript, PHP)
 * Client software (LabView, C++)
 
 ---
