@@ -3,14 +3,14 @@
   <div class="wrapper">
 
     <div class="footer-col-wrapper">
-      <div class="footer-col  footer-col-1">
+      <div class="footer-col footer-col-1">
         <ul class="contact-list">
           <li>{{ site.title }}</li>
           <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
         </ul>
       </div>
 
-      <div class="footer-col  footer-col-2">
+      <div class="footer-col footer-col-2">
         <ul class="social-media-list">
           {% if site.github_username %}
           <li>
@@ -25,6 +25,29 @@
             </a>
           </li>
           {% endif %}
+
+			{% if site.linkedin_username %}
+			<li>
+				<a href="https://linkedin.com/in/{{ site.linkedin_username }}">
+				<svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+ 				<metadata id="metadata3075">image/svg+xml</metadata>
+				 <g>
+				  <g id="svg_1">
+				   <g id="svg_2">
+					<g transform="matrix(0.214387, 0, 0, -0.213134, 37.8271, 106.132)" id="g3019">
+					 <path d="m-176.33678,492.4935c0,2.95999 2.4604,5.36099 5.49559,5.36099l63.37598,0c3.03513,0 5.49562,-2.401 5.49562,-5.36099l0,-64.117c0,-2.961 -2.46048,-5.36099 -5.49562,-5.36099l-63.37598,0c-3.03519,0 -5.49559,2.39999 -5.49559,5.36099l0,64.117z" id="path14" fill-rule="nonzero" fill="#828282"/>
+					 <path d="m-153.79379,435.20648l0,33.79401l-11.23248,0l0,-33.79401l11.23248,0zm-5.61629,38.40802c3.91699,0 6.35501,2.59497 6.35501,5.83798c-0.07301,3.31601 -2.43802,5.83902 -6.2807,5.83902c-3.84233,0 -6.35451,-2.52301 -6.35451,-5.83902c0,-3.24301 2.4375,-5.83798 6.20699,-5.83798l0.073,0l0.00021,0z" id="path28" fill-rule="evenodd" fill="#ffffff"/>
+					 <path d="m-147.57848,435.20648l11.23238,0l0,18.87201c0,1.01001 0.07301,2.01898 0.36961,2.741c0.812,2.01801 2.66022,4.108 5.7632,4.108c4.06448,0 5.69041,-3.099 5.69041,-7.642l0,-18.07901l11.23151,0l0,19.37701c0,10.38 -5.5415,15.20999 -12.93161,15.20999c-6.0596,0 -8.71983,-3.38699 -10.19781,-5.694l0.07501,0l0,4.901l-11.23238,0c0.1474,-3.17099 0,-33.79401 0,-33.79401l-0.00032,0z" id="path30" fill-rule="evenodd" fill="#ffffff"/>
+					</g>
+				   </g>
+				  </g>
+				 </g>
+				</svg>
+
+				<span class="username">{{ site.linkedin_username }}</span>
+			  </a>
+			</li>
+			{% endif %}
 
           {% if site.twitter_username %}
           <li>
@@ -43,10 +66,10 @@
         </ul>
       </div>
 
-      <div class="footer-col  footer-col-3">
+      <!--<div class="footer-col  footer-col-3">
         <p class="text">{{ site.description }}</p>
       </div>
-    </div>
+    </div>-->
 
   </div>
 
