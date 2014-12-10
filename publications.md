@@ -18,8 +18,8 @@ This and the following EDM papers use a variety of machine learning techniques t
 
 ---
 
-#### Boredom Across Activities, and Across the Year, within Reasoning Mind
-**W. L. Miller**, R. Baker, M. J. Labrum, K. Petsche and A. Z. Wagner.  *KDD Workshop on Data Mining for Educational Assessment and Feedback (ASSESS 2014)* (2014). ([preprint]({{ site.url }}/assets/KDD_boredom-final.pdf))
+#### [Boredom Across Activities, and Across the Year, within Reasoning Mind](http://www.aspiringminds.com/assess/2014/camera_ready/paper/miller_etal.pdf)
+**W. L. Miller**, R. Baker, M. J. Labrum, K. Petsche and A. Z. Wagner.  *KDD Workshop on Data Mining for Educational Assessment and Feedback (ASSESS 2014)* (2014).
 
 We construct an automated, sensor-free detector of student boredom within the Readoning Mind system.
 To demonstrate the use of this detector, we apply it to data from 70,000 students across the entire school year.
