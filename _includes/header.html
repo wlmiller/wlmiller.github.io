@@ -1,0 +1,16 @@
+<div class="navbar navbar-default navbar-fixed-top">
+ 	<div class="container">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="{{ site.baseurl }}/" >{{ site.title }}</a>
+		</div>
+		<div class="navbar-collapse collapse">
+			<ul class="nav navbar-nav">
+				{% for page in site.pages %}
+ 					{% if page.title and page.group == 'navigation' %}
+  					<li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+  				{% endif %}
+				{% endfor %}
+			</ul>
+		</div>
+	</div>
+</div>

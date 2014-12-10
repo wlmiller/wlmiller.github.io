@@ -1,0 +1,11 @@
+# Site settings
+title: Neal Miller 
+email: wlmiller@gmail.com 
+description: > # this means to ignore newlines until "baseurl:"
+    The personal website of Neal Miller, Ph.D., a Houston, TX-based software engineer.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://wlmiller.github.io" # the base hostname & protocol for your site
+github_username: wlmiller 
+
+# Build settings
+markdown: kramdown
