@@ -17,7 +17,7 @@ RigMinder provides fully automated and wireless data management and capture tech
 	<div style="float:right" class="hidden-xs"><em>June 2014 - present</em></div>
 	<div class="visible-xs"><em>June 2014 - present</em></div>
 </div>
-<div class="col-xs-12">As a Software Engineer with RigMinder, my responsibilities cover a wide range of projects and technologies, including:</div> 
+<div class="col-xs-12">As a Software Engineer with RigMinder, my responsibilities cover a wide range of projects and technologies, including:</div><div class="margin-top:-12pt"></div>
 
 * PIC microcontroller firmware (C)
 * Data management and analysis (Python)
