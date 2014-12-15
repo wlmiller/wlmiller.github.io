@@ -36,6 +36,7 @@ Reasoning Mind is a non-profit organization with the mission of providing a firs
 	<div style="float:right" class="hidden-xs"><em>March 2013 - June 2014</em></div>
 	<div class="visible-xs"><em>March 2013 - June 2014</em></div>
 </div>
+<div style="margin-top:-12pt"></div>
 * Applied existing algorithms and developed new techniques for the application of educational data mining to the Reasoning Mind system for the purpose of tracing student knowledge and diagnosing areas in which remediation was needed
 * Developed sensor-free detectors of student affective states and behavior using machine learning techniques on student log data
 * Analyzed student log data from a pilot implementation of a new curriculum to inform revision of the existing product as well as future development of new offerings
@@ -45,6 +46,7 @@ Reasoning Mind is a non-profit organization with the mission of providing a firs
 	<div style="float:right" class="hidden-xs"><em>July 2012 - August 2013</em></div>
 	<div class="visible-xs"><em>July 2012 - August 2013</em></div>
 </div>
+<div style="margin-top:-12pt"></div>
 * Designed and improved the processes by which other employees work with each other and with those served by the organization
 * Interviewed stakeholders to understand their business needs, designed processes to best meet those needs, trained employees on these processes, and maintained them once they have been implemented
 * Member of the team responsible for administration and development of Reasoning Mind's <a href="http://salesforce.com">Salesforce.com</a> organization, used for most business processes throughout the organization, including new account enrollment, fundraising, and program implementation
@@ -62,6 +64,7 @@ Reasoning Mind is a non-profit organization with the mission of providing a firs
 <div class="col-sm-4 hidden-xs"><div style="float:right"><em>May 2011</em></div></div>
 <div class="col-sm-8 col-xs-12"><b>M.A., Chemical Physics</b><span class="visible-xs-inline"> (<em>May 2009</em>)</span></div>
 <div class="col-sm-4 hidden-xs"><div style="float:right"><em>May 2009</em></div></div>
+<div style="margin-top:-12pt"></div>
 * Dissertation: [Self-organization in systems of anisotropic particles](https://github.com/wlmiller/thesis/blob/master/main.pdf?raw=true) ([LaTeX source on GitHub](https://github.com/wlmiller/thesis))
 
 ---
@@ -69,6 +72,7 @@ Reasoning Mind is a non-profit organization with the mission of providing a firs
 #### The University of Texas at Austin
 <div class="col-sm-8 col-xs-12"><b>B.S., Chemistry</b><span class="visible-xs-inline"> (<em>May 2012</em>)</span></div>
 <div class="col-sm-4 hidden-xs"><div style="float:right"><em>May 2007</em></div></div>
+<div style="margin-top:-12pt"></div>
 * Thesis: [Single-molecule spectroscopic studies of conjugated polymers]({{ site.url }}/assets/WLMiller-UTthesis.pdf)
 
 ---
