@@ -55,18 +55,18 @@ Reasoning Mind is a non-profit organization with the mission of providing a firs
 ---
 
 #### Columbia University in the City of New York
-<div class="col-sm-8 col-xs-12"><b>Ph.D., Chemical Physics</b><span class="visible-xs"> (<em>May 2012</em>)</span></div>
+<div class="col-sm-8 col-xs-12"><b>Ph.D., Chemical Physics</b><span class="visible-xs-inline"> (<em>May 2012</em>)</span></div>
 <div class="col-sm-4 hidden-xs"><div style="float:right"><em>May 2012</em></div></div>
-<div class="col-sm-8 col-xs-12"><b>M.Phil, Chemical Physics</b><span class="visible-xs"> (<em>May 2011</em>)</span></div>
+<div class="col-sm-8 col-xs-12"><b>M.Phil, Chemical Physics</b><span class="visible-xs-inline"> (<em>May 2011</em>)</span></div>
 <div class="col-sm-4 hidden-xs"><div style="float:right"><em>May 2011</em></div></div>
-<div class="col-sm-8 col-xs-12"><b>M.A., Chemical Physics</b><span class="visible-xs"> (<em>May 2009</em>)</span></div>
+<div class="col-sm-8 col-xs-12"><b>M.A., Chemical Physics</b><span class="visible-xs-inline"> (<em>May 2009</em>)</span></div>
 <div class="col-sm-4 hidden-xs"><div style="float:right"><em>May 2009</em></div></div>
 * Dissertation: [Self-organization in systems of anisotropic particles](https://github.com/wlmiller/thesis/blob/master/main.pdf?raw=true) ([LaTeX source on GitHub](https://github.com/wlmiller/thesis))
 
 ---
 
 #### The University of Texas at Austin
-<div class="col-sm-8 col-xs-12"><b>B.S., Chemistry</b><span class="visible-xs"> (<em>May 2012</em>)</span></div>
+<div class="col-sm-8 col-xs-12"><b>B.S., Chemistry</b><span class="visible-xs-inline"> (<em>May 2012</em>)</span></div>
 <div class="col-sm-4 hidden-xs"><div style="float:right"><em>May 2007</em></div></div>
 * Thesis: [Single-molecule spectroscopic studies of conjugated polymers]({{ site.url }}/assets/WLMiller-UTthesis.pdf)
 
