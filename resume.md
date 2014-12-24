@@ -12,13 +12,15 @@ group: navigation
 #### [RigMinder](http://rigminder.com)
 RigMinder provides fully automated and wireless data management and capture technologies for the oil field delivered in real time.
 
+<div style="width:100%">
 <div class="col-sm-8 col-xs-12"><b>Lead Software Engineer</b></div>
 <div class="col-sm-4 col-xs-12">
 	<div style="float:right" class="hidden-xs"><em>June 2014 - present</em></div>
 	<div class="visible-xs"><em>June 2014 - present</em></div>
 </div>
 <div class="col-xs-12">As Lead Software Engineer with RigMinder, I manage the day-to-day operations and priorities of our sotware development team.  In addition, I am actively coding every day; my responsibilities cover a wide range of projects and technologies, including:</div> 
-<div style="margin-top:-12pt"></div>
+</div>
+<!--<div style="margin-top:-12pt"></div>-->
 * PIC microcontroller firmware (C)
 * Data management and analysis (Python, Go)
 * Database management (PostgreSQL)
