@@ -8,7 +8,7 @@ group: navigation
 
 ---
 
-#### Automated Detection of Proactive Remediation by Teachers in Reasoning Mind Classrooms
+#### [Automated Detection of Proactive Remediation by Teachers in Reasoning Mind Classrooms](http://dx.doi.org/10.1145/2723576.2723607)
 **W. L. Miller**, R. Baker, M. Labrum, K. Petsche, Y.-H. Liu, and A. Z. Wagner.  *The Fifth International Learning Analytics & Knowledge Conference (LAK 15)* (accepted).
 
 In collaboration with Columbia University Teachers College professor [Ryan Baker](http://www.columbia.edu/~rsb2162/), we build automated, sensor-free detectors of "proactive remediation" (on-the-spot teacher intervention with students based upon their performance) by [Reasoning Mind](http://reasoningmind.org) teachers.
