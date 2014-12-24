@@ -18,7 +18,7 @@ RigMinder provides fully automated and wireless data management and capture tech
 	<div class="visible-xs"><em>June 2014 - present</em></div>
 </div>
 <div class="col-xs-12">As Lead Software Engineer with RigMinder, I manage the day-to-day operations and priorities of our sotware development team.  In addition, I am actively coding every day; my responsibilities cover a wide range of projects and technologies, including:</div> 
-<div class="col-md-12">
+<div class="col-xs-12">
 	<ul>
 		<li> PIC microcontroller firmware (C)</li>
 		<li> Data management and analysis (Python, Go)</li>
