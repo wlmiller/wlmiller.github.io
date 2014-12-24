@@ -18,7 +18,7 @@ RigMinder provides fully automated and wireless data management and capture tech
 	<div class="visible-xs"><em>June 2014 - present</em></div>
 </div>
 <div class="col-xs-12">As Lead Software Engineer with RigMinder, I manage the day-to-day operations and priorities of our sotware development team.  In addition, I am actively coding every day; my responsibilities cover a wide range of projects and technologies, including:</div> 
-<div class="col-md-12">
+<div class="col-xs-12">
 	<ul>
 		<li> PIC microcontroller firmware (C)</li>
 		<li> Data management and analysis (Python, Go)</li>
@@ -38,7 +38,7 @@ Reasoning Mind is a non-profit organization with the mission of providing a firs
 	<div style="float:right" class="hidden-xs"><em>March 2013 - June 2014</em></div>
 	<div class="visible-xs"><em>March 2013 - June 2014</em></div>
 </div>
-<div class="col-md-12">
+<div class="col-xs-12">
 	<ul>
 		<li> Applied existing algorithms and developed new techniques for the application of educational data mining to the Reasoning Mind system for the purpose of tracing student knowledge and diagnosing areas in which remediation was needed</li>
 		<li> Developed sensor-free detectors of student affective states and behavior using machine learning techniques on student log data</li>
@@ -51,7 +51,7 @@ Reasoning Mind is a non-profit organization with the mission of providing a firs
 	<div style="float:right" class="hidden-xs"><em>July 2012 - August 2013</em></div>
 	<div class="visible-xs"><em>July 2012 - August 2013</em></div>
 </div>
-<div class="col-md-12">
+<div class="col-xs-12">
 	<ul>
 		<li> Designed and improved the processes by which other employees work with each other and with those served by the organization</li>
 		<li> Interviewed stakeholders to understand their business needs, designed processes to best meet those needs, trained employees on these processes, and maintained them once they have been implemented</li>
@@ -72,7 +72,7 @@ Reasoning Mind is a non-profit organization with the mission of providing a firs
 <div class="col-sm-4 hidden-xs"><div style="float:right"><em>May 2011</em></div></div>
 <div class="col-sm-8 col-xs-12"><b>M.A., Chemical Physics</b><span class="visible-xs-inline"> (<em>May 2009</em>)</span></div>
 <div class="col-sm-4 hidden-xs"><div style="float:right"><em>May 2009</em></div></div>
-<div class="col-md-12">
+<div class="col-xs-12">
 	<ul><li>Dissertation: <a href="https://github.com/wlmiller/thesis/blob/master/main.pdf?raw=true">Self-organization in systems of anisotropic particles</a> (<a href="https://github.com/wlmiller/thesis">LaTeX source on GitHub</a>)</li></ul>
 </div>
 
@@ -81,7 +81,7 @@ Reasoning Mind is a non-profit organization with the mission of providing a firs
 #### The University of Texas at Austin
 <div class="col-sm-8 col-xs-12"><b>B.S., Chemistry</b><span class="visible-xs-inline"> (<em>May 2012</em>)</span></div>
 <div class="col-sm-4 hidden-xs"><div style="float:right"><em>May 2007</em></div></div>
-<div class="col-md-12">
+<div class="col-xs-12">
 <ul><li> Thesis: <a href="{{ site.url }}/assets/WLMiller-UTthesis.pdf">Single-molecule spectroscopic studies of conjugated polymers</a></li></ul>
 
 ---
