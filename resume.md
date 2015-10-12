@@ -87,6 +87,7 @@ Reasoning Mind is a non-profit organization with the mission of providing a firs
 ---
 
 ## Skills
+
 <div class="col-md-6 cols-xs-12" markdown="1">
 * Languages:
 	* Python ([example](https://github.com/wlmiller/ChatBot))
