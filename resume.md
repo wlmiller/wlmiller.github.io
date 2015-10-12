@@ -83,6 +83,7 @@ Reasoning Mind is a non-profit organization with the mission of providing a firs
 <div class="col-sm-4 hidden-xs"><div style="float:right"><em>May 2007</em></div></div>
 <div class="col-xs-12">
 <ul><li> Thesis: <a href="{{ site.url }}/assets/WLMiller-UTthesis.pdf">Single-molecule spectroscopic studies of conjugated polymers</a></li></ul>
+</div>
 
 ---
 
