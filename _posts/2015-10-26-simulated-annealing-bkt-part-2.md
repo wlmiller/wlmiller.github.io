@@ -54,9 +54,13 @@ As I mentioned above, I started out using Baker's brute force algorithm, and had
 
 I did try some other ideas before I moved on to the one I'll describe in part 3.  One that I thought was promising was a sort of "ratcheting" algorithm similar to EM -- I would fit each group of parameters (for each of the three problem types) separately, and keep going until convergence.  However, it still took a long time (days to weeks vs. hours) and didn't converge well.  I needed a new method; ideally, one which was not stymied by local minima, but would complete before the heat death of the universe on a reasonable PC.
 
+---
+
+This post is continued in part 3 [here]({% post_url 2015-11-02-simulated-annealing-bkt-part-3 %}).
+
 #### References
 
 1. Beck, J.E., Chang, K. Identifiability: A Fundamental Problem of Student Modeling. *Proceedings of the 11th International Conference on User Modeling* (2007).
 2. Baker, R.S.J.d., *et al.* Contextual Slip and Prediction of Student Performance After Use of an Intelligent Tutor. *Proceedings of the 18th Annual Conference on User Modeling, Adaptation, and Personalization* (2010).
 3. Chang, K., Beck, J., Mostow, J., Corbett, A. A Bayes Bet Toolkit for Student Modeling in Intelligent Tutoring Systems. *Proceedings of the 8th International Conference on Intelligent Tutoring Systems* (2006).
-4. Miller, E.L., Baker, R. S., Rossi, L.M. Unifying Computer-Based Assessment Across Conceptual Instruction, Problem-Solving, and Digital Games. *Technology, Knowledge and Learning* 19, 165 (2014).
+4. Miller, W.L., Baker, R. S., Rossi, L.M. Unifying Computer-Based Assessment Across Conceptual Instruction, Problem-Solving, and Digital Games. *Technology, Knowledge and Learning* 19, 165 (2014).
