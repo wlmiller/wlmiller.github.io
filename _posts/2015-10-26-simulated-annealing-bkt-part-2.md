@@ -14,7 +14,7 @@ Finding this combination of parameters is non-trivial.  We can usually set some 
 
 So given all that, how does one determine the best values to use for these parameters?  There are a couple of standard methods.
 
-## Brute force
+## Brute Force
 This is Ryan Baker's method,<sup>2</sup> and is the one I started out using.  Conceptually, it is almost trivial.  In Baker's BF algorith, you simply loop over the four parameters in a grid; once you've completed the whole grid, you take the region of the grid that gave the best prediction (measured by root mean square error or RMSE between predicted and actual student performance), and run a finer grid search over that region.  The combination in that finer grid that gives the lowest RMSE is the winner.
 
 There are a couple of benefits to this method:
