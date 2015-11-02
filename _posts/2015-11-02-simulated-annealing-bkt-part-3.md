@@ -24,13 +24,14 @@ I won't give a comprehensive description of Monte Carlo simulations, but it's wo
 
 Consider a system of \\(N\\) particles in a box (I'll leave the term "particles" generic, but there are some qualifications to make this technique applicable).  They are subject some interaction potential between particles -- the details are unimportant.  Assume the particles are completely rotationally symmetric (so particle rotation can be ignored).  Then we have a system with \\(3N\\) degrees of freedom.
 
-For each step of the simulation, a particle is chosen at random, and a trial move is generated, in some random direction and for some random distance (within a defined limit).  The potential energy difference between the particle after this trial move and the particle before the trial move, \\((\Delta E\\), is calculated.  The trial move is then accepted or rejected based on the Metropolis criterion,
+For each step of the simulation, a particle is chosen at random, and a trial move is generated, in some random direction and for some random distance (within a defined limit).  The potential energy difference between the particle after this trial move and the particle before the trial move, \\(\Delta E\\), is calculated.  The trial move is then accepted or rejected based on the Metropolis criterion,
 
 $$
 P_\mathrm{accept} = \mathrm{min}\left(1, \mathrm{exp}\left(-\frac{\Delta E}{T}\right)\right)
 $$
 
 where \\(T\\) is the temperature.  Note a few observations:
+
 1. If \\(\Delta E \leq 0\\) (potential energy decreases), the move is always accepted.
 2. if \\(\Delta E >0 0\\), then acceptence is less and less likely as the energy difference grows.
 3. For a given positive \\(\Delta E\\), acceptance is more likely the higher the temperature.
