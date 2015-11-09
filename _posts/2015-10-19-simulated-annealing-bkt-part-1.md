@@ -63,7 +63,7 @@ There are also a few parameters which are considered to properties of the KC (in
 * \\(P(S)\\) is the *slip* probability - the probability that the student misses the qustion, given they *do* know the mateiral, or \\(P(\neg C_n \vert K_n)\\).
 * \\(P(L)\\) is the probability that the student *learned* the KC in the process of answering the previous question: \\(P(L_n \vert \neg L_{n-1})\\).
 
-Note that (again, in the most common form of BKT), there's no "forgetting" paramater.  Once a student has learned a KC, the model assumes they will know it forever.  Obviously, that's not a great assumption, and forgetting has been incorporated into the BKT model at times, to varying levels of success.
+Note that (again, in the most common form of BKT), there's no "forgetting" parameter.  Once a student has learned a KC, the model assumes they will know it forever.  Obviously, that's not a great assumption, and forgetting has been incorporated into the BKT model at times, to varying levels of success.
 
 So in principle, if we know a student's performance on a series of problems, we can estimate (in real-time or after-the-fact) the probability that they'd learned the related KC at each step -- assuming, of course, we have values for \\(P(G)\\), \\(P(S)\\), and \\(P(L)\\), as well as the prior \\(P(K_0)\\) -- that is, the probability that the student started out already knowing the material.  So where do we get those?  That's where I'll begin [part 2]({% post_url 2015-10-26-simulated-annealing-bkt-part-2 %}) .
 
