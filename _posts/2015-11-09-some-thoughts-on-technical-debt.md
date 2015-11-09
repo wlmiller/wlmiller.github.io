@@ -6,7 +6,7 @@ categories: software-development technical-debt
 author: Neal Miller
 ---
 I've been thinking a lot about technical debt, lately.
-There a couple of big reasons for that related to my day job: first, that we have a lot, and second, that I think we're in a strong position to pay it down.
+There are a couple of big reasons for that related to my day job: first, that we have a lot, and second, that I think we're in a strong position to pay it down.
 
 ## We have a lot
 I don't think I'm saying anything shocking when I say that there is a ton of technical debt built up in our codebase.
