@@ -184,5 +184,5 @@ For the most part, the type system stays out of the way - it's there to help pre
 ## Conclusion
 
 I found Go an enjoyable language to write in, and I think it's a great option for relatively simple tasks that benefit from substantial concurrency.
-That said, there are some important warts that have to be considered, mainly around the type system.
-
+That said, there are some important warts that have to be considered.
+I sometimes find Go's lack of generics, implicit definition of interfaces, and use of return values rather than exceptions (I won't go into detail about these; rants are easy to find) annoying, but for a certain class of problems, Go is a great tool to have in your toolbox.
