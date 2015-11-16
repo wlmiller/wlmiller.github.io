@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Transitioning a simple script from Python to Go"
-date:   2015-04-30 15:49:00
+date:   2015-11-16 17:00:00
 categories: go python
 author: Neal Miller
 ---
