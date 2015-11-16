@@ -1,21 +1,21 @@
 ---
 layout: post
-title:  "First Impressions of Go"
+title:  "Transitioning a simple script from Python to Go"
 date:   2015-04-30 15:49:00
 categories: go python
 author: Neal Miller
 ---
-I've been looking for an excuse to use [Go](http://golang.org) in my work for a while now -- it's gotten a lot of hype, and the characterization it's often given of being something like a compiled, statically-typed Python was intriguing to me.
+A few months back, I was looking for an excuse to use [Go](http://golang.org) in my work -- it's gotten a lot of hype, and the characterization it's often given of being something like a compiled, statically-typed Python was intriguing to me.
 I use Python a great deal and have for years; it's always been my first choice for many tasks.
-However, anyone who's worked with a project of any size in a dynamically-typed language comes to appreciate the help the compiler provides in statically-typed languages like Java.
+However, anyone who's worked with a project of any size in a dynamically-typed language comes to appreciate the help the compiler provides in statically-typed languages, not to mention the performance gains that usually come with moving from an interpreted to a compiled language.
 
-Recently, just such an opportunity arose.
+A few months ago, just such an opportunity arose.
 At work, we have a Python script that's responsible for data replication - data stream in from client sites via TCP, and this script is responsible for routing it to its proper location.
 It's a relatively simple script comprising a few hundred lines of Python, but it's a critical piece of infrastructure.
 
 When the server gets a TCP connection, it spawns a [thread](http://docs.python.org/2/library/threading.html) to parse the incoming data and add it to a queue to be inserted into the database.
 The threading behavior of this script has always been a little screwy, which isn't too shocking; due to the [Global Interpreter Lock](https://wiki.python.org/moin/GlobalInterpreterLock) (GIL), Python can't do true multithreading.
-Rather than fighting the GIL for what was always going to be suboptimal, we decided to consider another language -- Python's great, but not the best tool for every job, and in particular, didn't seem like the best tool for this one.
+Rather than fighting the GIL for what was always going to be suboptimal, we decided to consider another language -- Python's great, but not the best tool for every job, and in particular, it didn't seem like the best tool for this one.
 
 In our minds, the important features of a language to be considered a good fit for this problem were:
 
@@ -24,12 +24,12 @@ In our minds, the important features of a language to be considered a good fit f
 
 Below I'll talk about how Go addressed each of these items, and at the end, will briefly discuss a couple of shortcomings with Go.
  
- <h2>Concurrency</h2>
+## Concurrency
 
 Concurrency in Go is easy.
 That's a big part of the point.
 Concurrency works Go using [Goroutines](https://gobyexample.com/goroutines).
-Goroutines are simply functions that can run concurrently, and creating one is very simple.  Imagine we have the following code:
+Goroutines are basically very lightweight threads.  Imagine we have the following code:
 {% highlight go %}
 func foo() {
     // Long-running task
@@ -79,30 +79,30 @@ func main() {
 With that introduction out of the way, here's a rough sketch of the bones of part of the Python version of the replication script:
 {% highlight python linenos %}
 class WriteThread(threading.Thread):
-    def __init__(self, queue):
-        self.queue = queue
+    def __init__(self):
+        pass
 
     def run(self):
         while 1:
             data = queue.get()
-            # handle the data
+            # process and save the data
 
 class HandlerThread(threading.Thread):
-    def __init__(self, queue, conn):
-        self.queue = queue
-        self.conn = conn
+    def __init__(self, conn):
+        self.socket = conn
 
     def run(self):
-        data = self.socket.recv(n)
+        global queue
+        data = self.conn.recv(BUFFER_SIZE)
         # parse data
         # split into pieces
         for piece in pieces:
             queue.put(piece)
 
-def replicate(socket, queue):
+def replicate(socket):
     while 1:
         conn, remote_addr = socket.accept()
-        HandlerThread(queue, conn).start()
+        HandlerThread(conn).start()
 
 def main():
     socket = socket.socket(...)
@@ -111,9 +111,9 @@ def main():
     global queue
     queue = Queue.Queue()
 
-    WriteThread(queue).start()
+    WriteThread().start()
 
-    replicate(socket, queue)
+    replicate(socket)
 {% endhighlight %}
 
 The basic idea is relatively simple: every time a connection comes in, a new `HandlerThread` is spun up to deal with it.
@@ -125,7 +125,7 @@ var ch = make(chan string)
 func write() {
     for {
         var data <- ch
-        // handle the data
+        // process and save the data
     }
 }
 
@@ -166,7 +166,7 @@ The two pieces of code work in almost the same way (although the mechanics of a 
 Of course, that's secondary to the main point - the Go code is truly multithreaded.
 Really, Go only had to not be significantly worse to write to win this category since Python completely fails on multithreading -- being nicer to write is a bonus. 
  
-<h2>Productivity</h2>
+## Productivity
 
 Before starting this conversion, I'd never written a line of Go, but I'd written thousands of lines of Python over more than 10 years.
 While I enjoy learning new and wanted to look into Go anyway, it didn't make sense to pick up a huge, complex language (e.g. C++) or one that is dramatically different from the "C tradition" (e.g. Rust, Haskell) -- we wanted to choose a language that worked better for the purpose, but in a similar basic way to Python (or C).
@@ -175,11 +175,14 @@ Beyond some very superficial syntactic differences, it's very easy to recognize 
 Go is also a small language.
 There are a small number of keywords, and most functionality is brought in from compact, self-contained modules.
 It's much like Python in this regard, but to me it feels even smaller.
-The similarity to C and the small size mean that it was a very simple language to pick up - going from a blank editor screen to a working replication program took a day or so.
+The similarity to C and the small size mean that it was a very simple language to pick up - going from a blank editor screen to a working replication program took a few hours.
 
 There's a general perception that statically-typed languages such as Go tend to be more verbose -- so the tradeoff for benefits like speed and type safety is more lines of code.
 However, I was surprised to discover, after completing the conversion of the above code from Python to Go, that the two were essentially identical in length.
+For the most part, the type system stays out of the way - it's there to help prevent runtime bugs, but Go has a robust type inference system which means that you often don't have to spend much time thinking about it.
 
-<h2>Conclusions</h2>
+## Conclusion
 
-We were able to accomplish what we set out to do using Go.
+I found Go an enjoyable language to write in, and I think it's a great option for relatively simple tasks that benefit from substantial concurrency.
+That said, there are some important warts that have to be considered, mainly around the type system.
+
