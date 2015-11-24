@@ -64,6 +64,7 @@ model.fit(X_train, y_train)
 {% endhighlight %}
 
 A couple of things are worth explanation:
+
 1. `pentalty = 'l1'`: This indicates that the logistic regression fit should use the L1 norm for penalization.
 This penalty causes the model to favor fewer features, in an attempt to avoid overfitting the data.
 2. `C = 0.001`: The inverse of the regularization strength.  A smaller value of `C` results in a more stringent regularization penalty, and fewer resulting features.
@@ -97,6 +98,7 @@ Here are the model's predictions vs. the "expert" predictions and the actual res
 
 Coincidentally, both my simple model and the ESPN experts correctly predicted 8 of the 14 games, or 57%.
 Diving in a bit more deeply, my model and the experts disagreed on 4 games:
+
 * OAK/DET - My model was right.
 * NYJ/HOU - My model was right.
 * MIA/DAL - My model was wrong.  This one is completely understandable - The Dallas Cowbows' quarterback, Tony Romo, has been out for the past seven weeks with an injury.
@@ -125,6 +127,7 @@ The resulting model, after week 11 of the 2015 season (this past weekend), has n
 
 This is probably still too many features to use for a model on as little data as we have, but it works for now.
 Looking over this list, you can see that the model's estimate of the probability that the home team will win is *increased* by:
+
 * The home team's average number of passing yards
 * The home team's average time of posession
 * The home team's average score
@@ -132,6 +135,7 @@ Looking over this list, you can see that the model's estimate of the probability
 * The average score allowed by the away team.
 
 The probability that the home team will win is *decreased* by:
+
 * The home team's average number of yards of penalties
 * The home team's average number of punt yards
 * The average score allowed by the home team
