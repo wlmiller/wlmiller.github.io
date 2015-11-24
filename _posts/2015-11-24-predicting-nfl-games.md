@@ -22,7 +22,7 @@ The `y` array is an array of boolean answers to the question "Did the home team 
 
 Here's a list of potential parameters used for this model (again, these are averages for the season up to but not including the current game):
 
-```
+{% highlight python %}
 home_first_downs
 home_passing_yds
 home_penalty_cnt
@@ -49,7 +49,7 @@ away_total_yds
 away_turnovers
 away_score
 away_opponentscore
-```
+{% endhighlight %}
 
 It's then a relatively simple matter of performing a logistic regression on the data.
 For simplicity, when building a model after week 11 (for example), the training set is all data through week 10 of that season, and the test set is the week 11 data.
