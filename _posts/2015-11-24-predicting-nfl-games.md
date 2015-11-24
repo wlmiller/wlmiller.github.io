@@ -21,6 +21,7 @@ From these arrays, I build up a large two-dimensional array (one row for each ga
 The `y` array is an array of boolean answers to the question "Did the home team win?".
 
 Here's a list of potential parameters used for this model (again, these are averages for the season up to but not including the current game):
+
 ```
 home_first_downs
 home_passing_yds
@@ -56,7 +57,7 @@ For simplicity, when building a model after week 11 (for example), the training 
 I performed the following logistic regression, using [scikit-learn](http://scikit-learn.org/stable/).
 
 {% highlight python %}
-from sklean import linear_model
+from sklearn import linear_model
 
 model = linear_model.LogisticRegression(penalty = 'l1', C = 0.001)
 model.fit(X_train, y_train)
@@ -77,7 +78,7 @@ However, I thought it was worth comparing it to ESPN's "experts".
 
 Here are the model's predictions vs. the "expert" predictions and the actual results from week 11:
 
-| Game | Model | "Experts" | Actual |
+| Game | Model pred. | "Experts" pred. | Actual winner |
 |:------|-----:|-----:|----:|
 | TEN vs. JAC | JAC | JAC | JAC | 
 | DEN vs. CHI | CHI | CHI | DEN |
