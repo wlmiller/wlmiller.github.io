@@ -26,7 +26,7 @@ Follow the instructions, providing the registration token, which can be found in
 It is placed in the root directory of the project.
 Because I wanted continuous *deployment*, my `.gitlab-ci.yml` consists of two stages:
 
-```
+{% highlight yaml %}
 stages:
     - test
     - deploy
@@ -46,7 +46,7 @@ deploy:
         - rm -rf /var/www/html/portal
         - mkdir /var/www/html/portal
         - cp -r * /var/www/html/portal
-```
+{% endhighlight %}
 
 The `test` stage performs three actions:
 
@@ -60,7 +60,7 @@ Assuming the `test` stage passes, the `deploy` stage runs, which simply replaces
 Note that above I included the `--with-coverage` flag for nosetests.  
 This provides an output similar to that shown below, from which the total test coverage can be extracted.
 
-```
+{% highlight python %}
 Name                           Stmts   Miss Branch BrPart  Cover   Missing
 --------------------------------------------------------------------------
 ...  
@@ -74,14 +74,14 @@ TOTAL                           1943    210    688     68    87%
 Ran 114 tests in 294.046s
 
 OK
-```
+{% endhighlight %}
 
 That last number -- `87%` -- is the total coverage number I'm after.
 By navigating with GitLab to your project > Settings > CI Settings and placing the followin regular expression in the "Test coverage parsing" field.
 
-```
+{% highlight python %}
 \d+\%\s+$
-```
+{% endhighlight %}
 
 This pattern matches a sequence of digits, followed by the `%` symbol, followed by one or more whitespace characters, followed by the end of a line.
 The result is that GitLab is able to extract the `87%` coverage metrics, which is displayed alongside the commits in GitLab.
