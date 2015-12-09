@@ -79,7 +79,7 @@ OK
 That last number -- `87%` -- is the total coverage number I'm after.
 By navigating with GitLab to your project > Settings > CI Settings and placing the followin regular expression in the "Test coverage parsing" field.
 
-{% highlight python %}
+{% highlight text %}
 \d+\%\s+$
 {% endhighlight %}
 
