@@ -5,28 +5,62 @@ description: ""
 group: navigation
 ---
 
+## Technical Skills
+
+---
+
+**Languages:** C#, JavaScript, Python, C, C++, Java
+
+**Technologies:** WITS, scikit-learn, Flask, Xamarin, Angular, Ionic, Monte Carlo
+
+**Software:** PostgreSQL, R, MATLAB, RapidMiner
+
+**Applied Sciences:** Chemistry, Physics, Thermodynamics, Statistical Mechanics, Quantum Mechanics
+
+---
+
 ## Experience
 
 ---
+
+#### [Durwella](http://durwella.com)
+Durwella is a software solutions company that focuses on scientific and engineering projects.  We bring to bear deep technical expertise and extensive domain knowledge to develop a wide variety of application
+
+<div class="col-sm-8 col-xs-12"><b>Technology Architect</b></div>
+<div class="col-sm-4 col-xs-12">
+	<div style="float:right" class="hidden-xs"><em>February 2016 - present</em></div>
+	<div class="visible-xs"><em>February 2016 - present</em></div>
+</div>
+<div class="col-xs-12">Projects I've worked on as Technology Architect with Durwella include:</div> 
+<div class="col-xs-12">
+	<ul>
+		<li> A <a href="http://xamarin.com">Xamarin</a> application for Android and iOS focused on an engineering application in the domain of oil drilling.</li>
+		<li> Extensions for the <a href="https://www.software.slb.com/products/petrel">Petrel</a> and <a href="http://www.pdgm.com/products/skua-gocad/">SKUA-GOCAD</a> geoscience software platform for seismic and geological modeling.</li>
+	</ul>
+</div>&nbsp;
+
+<hr/>
 
 #### [RigMinder](http://rigminder.com)
 RigMinder provides fully automated and wireless data management and capture technologies for the oil field delivered in real time.
 
 <div class="col-sm-8 col-xs-12"><b>Lead Software Engineer</b></div>
 <div class="col-sm-4 col-xs-12">
-	<div style="float:right" class="hidden-xs"><em>June 2014 - present</em></div>
-	<div class="visible-xs"><em>June 2014 - present</em></div>
+	<div style="float:right" class="hidden-xs"><em>June 2014 - February 2016</em></div>
+	<div class="visible-xs"><em>June 2014 - February 2016</em></div>
 </div>
-<div class="col-xs-12">As Lead Software Engineer with RigMinder, I manage the day-to-day operations and priorities of our sotware development team.  In addition, I am actively coding every day; my responsibilities cover a wide range of projects and technologies, including:</div> 
+<div class="col-xs-12">As Lead Software Engineer with RigMinder, I managed the day-to-day operations and priorities of our sotware development team.
+In addition, I actively developed solutions to a wide range of problems using various technologies, including:</div> 
 <div class="col-xs-12">
 	<ul>
-		<li> PIC microcontroller firmware (C)</li>
+
 		<li> Data management and analysis (Python, Go)</li>
+		<li> Client software (C#)</li>
+		<li> Web applications (JavaScript, Flask)</li>
+		<li> PIC microcontroller firmware (C)</li>
 		<li> Database management (PostgreSQL)</li>
-		<li> Web applications (JavaScript, Flask, PHP)</li>
-		<li> Client software (LabView, C++)</li>
-</ul>
-</div>
+	</ul>
+</div>&nbsp;
 
 ---
 
@@ -57,7 +91,7 @@ Reasoning Mind is a non-profit organization with the mission of providing a firs
 		<li> Interviewed stakeholders to understand their business needs, designed processes to best meet those needs, trained employees on these processes, and maintained them once they have been implemented</li>
 		<li> Member of the team responsible for administration and development of Reasoning Mind's <a href="http://salesforce.com">Salesforce.com</a> organization, used for most business processes throughout the organization, including new account enrollment, fundraising, and program implementation</li>
 	</ul>
-</div>
+</div>&nbsp;
 
 ---
 
@@ -74,7 +108,7 @@ Reasoning Mind is a non-profit organization with the mission of providing a firs
 <div class="col-sm-4 hidden-xs"><div style="float:right"><em>May 2009</em></div></div>
 <div class="col-xs-12">
 	<ul><li>Dissertation: <a href="https://github.com/wlmiller/thesis/blob/master/main.pdf?raw=true">Self-organization in systems of anisotropic particles</a> (<a href="https://github.com/wlmiller/thesis">LaTeX source on GitHub</a>)</li></ul>
-</div>
+</div>&nbsp;
 
 ---
 
@@ -87,35 +121,4 @@ Reasoning Mind is a non-profit organization with the mission of providing a firs
 
 ---
 
-## Skills
 
----
-
-<div class="col-md-6 cols-xs-12" markdown="1">
-* Languages:
-	* Python ([example](https://github.com/wlmiller/ChatBot))
-	* C ([example](https://github.com/wlmiller/GradSchool))
-	* Java ([example 1](https://github.com/wlmiller/BKTSimulatedAnnealing), [2](https://github.com/wlmiller/GeneticAlgorithm))
-	* JavaScript ([example](http://cloud.rigminder.com/edr/))
-	* PostgreSQL, MySQL
-* Data analysis and machine learning tools:
-	* scikit-learn
-	* R
-	* MATLAB
-	* Mathematica
-* [Salesforce.com](http://salesforce.com) administration and development (Apex, VisualForce, SOQL)
-</div>
-<div class="col-md-6 cols-xs-12" markdown="1">
-* Linux
-* Embedded firmware
-* Data mining
-	* user modeling
-	* feature engineering
-    * feature extraction
-* Machine learning
-    * regression
-    * decision trees and random forests
-    * neural networks
-    * probabilistic graphical models
-    * support vector machines
-</div>
