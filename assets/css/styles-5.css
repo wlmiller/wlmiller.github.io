@@ -256,6 +256,12 @@ p {
 .footer .fa-heart {
   color: #fb866a;
 }
+.publications-section .job-title a {
+  color: #3F4650;
+}
+.publications-section .job-title a:hover {
+  color: #a85502;
+}
 /* Extra small devices (phones, less than 768px) */
 @media (max-width: 767px) {
   .sidebar-wrapper {
