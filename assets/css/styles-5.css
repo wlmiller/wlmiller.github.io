@@ -287,6 +287,10 @@ p {
     margin-bottom: 0;
   }
 }
+.company-image-div {
+  float:left;
+  margin-right:12px;
+}
 /* Small devices (tablets, 768px and up) */
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
