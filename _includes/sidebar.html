@@ -1,7 +1,13 @@
 <div class="sidebar-wrapper">
 	<div class="profile-container">
-		<img class="profile" src="assets/images/profile.png" alt="" />
-		<h1 class="name">Neal Miller</h1>
+		{% if page.url == '/' %}{% else %}<a href="/">{% endif %}
+			<img class="profile" src="assets/images/profile.png" alt="" />
+		{% if page.url == '/' %}{% else %}</a>{% endif %}
+		<h1 class="name">
+			{% if page.url == '/' %}{% else %}<a href="/">{% endif %}
+				Neal Miller
+			{% if page.url == '/' %}{% else %}</a>{% endif %}
+		</h1>
 		<h3 class="tagline">Software Engineer</h3>
 	</div><!--//profile-container-->
 	
