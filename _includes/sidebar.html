@@ -1,105 +1,151 @@
 <div class="sidebar-wrapper">
-	<div class="profile-container">
-		{% if page.url == '/' %}{% else %}<a href="/">{% endif %}
+    <div class="profile-container">
+        {% if page.url == '/' %}{% else %}<a href="/">{% endif %}
 			<img class="profile" src="assets/images/profile.png" alt="" />
 		{% if page.url == '/' %}{% else %}</a>{% endif %}
-		<h1 class="name">
-			{% if page.url == '/' %}{% else %}<a href="/">{% endif %}
+        <h1 class="name">
+            {% if page.url == '/' %}{% else %}<a href="/">{% endif %}
 				Neal Miller
 			{% if page.url == '/' %}{% else %}</a>{% endif %}
-		</h1>
-		<h3 class="tagline">Software Engineer</h3>
-	</div><!--//profile-container-->
-	
-	<div class="contact-container container-block">
-		<ul class="list-unstyled contact-list">
-			<li class="email"><i class="fa fa-envelope"></i><a href="mailto:neal@neal.miller.co">neal@nealmiller.co</a></li>
-			<li class="linkedin"><i class="fa fa-linkedin"></i><a href="http://linkedin.com/in/wlmiller3" target="_blank">linkedin.com/in/wlmiller3</a></li>
-			<li class="github"><i class="fa fa-github"></i><a href="http://github.com/wlmiller" target="_blank">github.com/wlmiller</a></li>
-		</ul>
-	</div><!--//contact-container-->
-	
-	<div class="education-container container-block hidden-xs">
-		<h2 class="container-block-title">Education</h2>
-		<div class="item">
-			<h4 class="degree">PhD in Chemical Physics</h4>
-			<h5 class="meta">Columbia University</h5>
-			<div class="time">2007 - 2012</div>
-		</div><!--//item-->
-		<div class="item">
-			<h4 class="degree">BS in Chemistry</h4>
-			<h5 class="meta">University of Texas at Austin</h5>
-			<div class="time">2003 - 2007</div>
-		</div><!--//item-->
-	</div><!--//education-container-->
-	
-	<div class="education-container container-block hidden-xs">
-		<h2 class="container-block-title">Skills</h2>
-		<div class="skillset">
-			<div class="item">
-				<h4 class="level-title">C#</h4>
-				<div class="level-bar">
-					<div class="level-bar-inner" data-level="98%">
-				</div>                               
-				</div><!--//level-bar-->                                 
-			</div><!--//item-->
-			
-			<div class="item">
-				<h4 class="level-title">Xamarin</h4>
-				<div class="level-bar">
-					<div class="level-bar-inner" data-level="98%">
-					</div>                                      
-				</div><!--//level-bar-->                                 
-			</div><!--//item-->
-			
-			<div class="item">
-				<h4 class="level-title">Python</h4>
-				<div class="level-bar">
-					<div class="level-bar-inner" data-level="98%">
-					</div>                                      
-				</div><!--//level-bar-->                                 
-			</div><!--//item-->
-			
-			<div class="item">
-				<h4 class="level-title">Applied Sciences</h4>
-				<div class="level-bar">
-					<div class="level-bar-inner" data-level="98%">
-					</div>                                      
-				</div><!--//level-bar-->                                 
-			</div><!--//item-->
-			
-			<div class="item">
-				<h4 class="level-title">WPF</h4>
-				<div class="level-bar">
-					<div class="level-bar-inner" data-level="85%">
-					</div>                                      
-				</div><!--//level-bar-->                                 
-			</div><!--//item-->
+        </h1>
+        <h3 class="tagline">Software Engineer</h3>
+    </div>
+    <!--//profile-container-->
 
-			<div class="item">
-				<h4 class="level-title">Ocean</h4>
-				<div class="level-bar">
-					<div class="level-bar-inner" data-level="75%">
-					</div>                                      
-				</div><!--//level-bar-->                                 
-			</div><!--//item-->
+    <div class="contact-container container-block">
+        <ul class="list-unstyled contact-list">
+            <li class="email"><a href="mailto:neal@neal.miller.co"><i class="fa fa-envelope"></i>neal@nealmiller.co</a></li>
+            <li class="linkedin"><a href="http://linkedin.com/in/wlmiller3" target="_blank"><i class="fa fa-linkedin"></i>/in/wlmiller3</a></li>
+            <li class="github"><a href="http://github.com/wlmiller" target="_blank"><i class="fa fa-github"></i>/wlmiller</a></li>
+            <!--<li class="npm"><a href="https://www.npmjs.com/~wlmiller" target="_blank"><img src="assets/images/npm.svg" class="contact-logo"/>/~wlmiller</a></li>
+			<li class="nuget"><a href="https://www.nuget.org/profiles/neal.miller" target="_blank"><img src="assets/images/nuget.svg" class="contact-logo"/>/profiles/neal.miller</a></li>-->
+        </ul>
+    </div>
+    <!--//contact-container-->
 
-			<div class="item">
-				<h4 class="level-title">Angular</h4>
-				<div class="level-bar">
-					<div class="level-bar-inner" data-level="60%">
-					</div>                                      
-				</div><!--//level-bar-->                                 
-			</div><!--//item-->
-			
-			<div class="item">
-				<h4 class="level-title">C++</h4>
-				<div class="level-bar">
-					<div class="level-bar-inner" data-level="60%">
-					</div>                                      
-				</div><!--//level-bar-->                                 
-			</div><!--//item-->
-		</div><!--//skillset-->
-	</div><!--//education-container-->
-	
-</div><!--//sidebar-wrapper-->
+    <div class="education-container container-block hidden-xs" style="padding-bottom:80px">
+        <h2 class="container-block-title">Certification</h2>
+        <div class="item">
+            <div class="col-sm-3 cert-badge">
+                <a href="https://university.xamarin.com/certification?q=neal.miller@durwella.com#verify" target="_blank">
+                    <img src="assets/images/xamarin-badge.png" class="img img-responsive" />
+                </a>
+            </div>
+            <div class="col-sm-9">
+                <h4 class="degree">
+                    <a href="https://university.xamarin.com/certification?q=neal.miller@durwella.com#verify" target="_blank">
+						Xamarin Certified Mobile Developer
+					</a>
+                </h4>
+            </div>
+        </div>
+        <!--//item-->
+    </div>
+    <!--//education-container-->
+
+    <div class="education-container container-block hidden-xs">
+        <h2 class="container-block-title">Education</h2>
+        <div class="item">
+            <h4 class="degree">PhD in Chemical Physics</h4>
+            <h5 class="meta">Columbia University</h5>
+            <div class="time">2007 - 2012</div>
+        </div>
+        <!--//item-->
+        <div class="item">
+            <h4 class="degree">BS in Chemistry</h4>
+            <h5 class="meta">University of Texas at Austin</h5>
+            <div class="time">2003 - 2007</div>
+        </div>
+        <!--//item-->
+    </div>
+    <!--//education-container-->
+
+    <div class="education-container container-block hidden-xs">
+        <h2 class="container-block-title">Skills</h2>
+        <div class="skillset">
+            <div class="item">
+                <h4 class="level-title">C#</h4>
+                <div class="level-bar">
+                    <div class="level-bar-inner" data-level="98%">
+                    </div>
+                </div>
+                <!--//level-bar-->
+            </div>
+            <!--//item-->
+
+            <div class="item">
+                <h4 class="level-title">Xamarin</h4>
+                <div class="level-bar">
+                    <div class="level-bar-inner" data-level="98%">
+                    </div>
+                </div>
+                <!--//level-bar-->
+            </div>
+            <!--//item-->
+
+            <div class="item">
+                <h4 class="level-title">Python</h4>
+                <div class="level-bar">
+                    <div class="level-bar-inner" data-level="98%">
+                    </div>
+                </div>
+                <!--//level-bar-->
+            </div>
+            <!--//item-->
+
+            <div class="item">
+                <h4 class="level-title">Applied Sciences</h4>
+                <div class="level-bar">
+                    <div class="level-bar-inner" data-level="98%">
+                    </div>
+                </div>
+                <!--//level-bar-->
+            </div>
+            <!--//item-->
+
+            <div class="item">
+                <h4 class="level-title">WPF</h4>
+                <div class="level-bar">
+                    <div class="level-bar-inner" data-level="85%">
+                    </div>
+                </div>
+                <!--//level-bar-->
+            </div>
+            <!--//item-->
+
+            <div class="item">
+                <h4 class="level-title">Ocean</h4>
+                <div class="level-bar">
+                    <div class="level-bar-inner" data-level="75%">
+                    </div>
+                </div>
+                <!--//level-bar-->
+            </div>
+            <!--//item-->
+
+            <div class="item">
+                <h4 class="level-title">Angular</h4>
+                <div class="level-bar">
+                    <div class="level-bar-inner" data-level="60%">
+                    </div>
+                </div>
+                <!--//level-bar-->
+            </div>
+            <!--//item-->
+
+            <div class="item">
+                <h4 class="level-title">C++</h4>
+                <div class="level-bar">
+                    <div class="level-bar-inner" data-level="60%">
+                    </div>
+                </div>
+                <!--//level-bar-->
+            </div>
+            <!--//item-->
+        </div>
+        <!--//skillset-->
+    </div>
+    <!--//education-container-->
+
+</div>
+<!--//sidebar-wrapper-->
