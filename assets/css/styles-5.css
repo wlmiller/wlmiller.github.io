@@ -33,7 +33,6 @@ h6 {
 }
 
 a {
-    color: #f47c03;
     -webkit-transition: all 0.4s ease-in-out;
     -moz-transition: all 0.4s ease-in-out;
     -ms-transition: all 0.4s ease-in-out;
@@ -42,7 +41,6 @@ a {
 
 a:hover {
     text-decoration: underline;
-    color: #a85502;
 }
 
 a:focus {
@@ -66,7 +64,7 @@ p {
 .sidebar-wrapper {
     background: #FDA246;
     position: absolute;
-    right: 0;
+    left: 0;
     width: 240px;
     height: 100%;
     color: #fff;
@@ -190,17 +188,31 @@ p {
 .main-wrapper {
     background: #fff;
     padding: 60px;
-    padding-right: 300px;
+    padding-left: 300px;
 }
 
-.main-wrapper .section-title {
+.main-wrapper h1 {
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 1000;
+    color: #f47c03;
+    position: relative;
+}
+
+.main-wrapper h2 {
     text-transform: uppercase;
     font-size: 20px;
     font-weight: 500;
     color: #f47c03;
     position: relative;
-    margin-top: 0;
-    margin-bottom: 20px;
+}
+
+.main-wrapper h3 {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 500;
+    color: #f47c03;
+    position: relative;
 }
 
 .main-wrapper .section-title .fa {
@@ -339,9 +351,17 @@ p {
 }
 
 .cert-badge {
-    padding: 0px;
+    height: 48px;
+    margin-right: 8px;
 }
 
+.cert-title {
+    margin-top: 16px !important;
+}
+
+.article-image {
+    width: 100%;
+}
 
 /* Extra small devices (phones, less than 768px) */
 
