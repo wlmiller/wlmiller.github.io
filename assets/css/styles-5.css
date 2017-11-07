@@ -363,6 +363,14 @@ p {
     width: 100%;
 }
 
+.itunes-badge {
+    height: 40px;
+}
+
+.play-badge {
+    height: 60px;
+}
+
 /* Extra small devices (phones, less than 768px) */
 
 @media (max-width: 767px) {
