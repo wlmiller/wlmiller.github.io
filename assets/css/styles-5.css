@@ -259,6 +259,10 @@ p {
     font-weight: 500;
 }
 
+.main-wrapper .job-details {
+    margin-left: 24px;
+}
+
 .main-wrapper .time {
     position: absolute;
     right: 0;
@@ -267,8 +271,19 @@ p {
 }
 
 .main-wrapper .company {
+    font-size: 16pt;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    color: #97AAC3;
+}
+
+.main-wrapper .university {
     margin-bottom: 10px;
     color: #97AAC3;
+}
+
+.main-wrapper .company a {
+    color: #3F4650;
 }
 
 .main-wrapper .project-title {
@@ -391,9 +406,17 @@ p {
     }
 }
 
+.experience-section .meta {
+    margin-bottom: 10px;
+}
+
 .company-image-div {
     float: left;
     margin-right: 12px;
+}
+
+.company-image-div img {
+    width: 60px;
 }
 
 
