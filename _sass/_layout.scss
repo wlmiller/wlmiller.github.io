@@ -191,6 +191,22 @@
 
 
 /**
+ * Core Competencies
+ */
+.competencies-grid {
+    display: flex;
+    gap: 2em;
+    flex-wrap: wrap;
+
+    .competency-category {
+        flex: 1;
+        min-width: 200px;
+    }
+}
+
+
+
+/**
  * Posts
  */
 .post-header {
