@@ -448,3 +448,31 @@ p {
 
 
 /* Ex-Large devices (large desktops, 1200px and up) */
+
+
+/* Sidebar Skills Section */
+
+.sidebar-wrapper .skills-container .skill-category {
+    font-size: 14px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.9);
+    margin-top: 15px;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+.sidebar-wrapper .skills-container .skill-category:first-of-type {
+    margin-top: 0;
+}
+
+.sidebar-wrapper .skills-container .skills-list {
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+.sidebar-wrapper .skills-container .skills-list li {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 5px;
+}
+
