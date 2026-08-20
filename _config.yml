@@ -2,7 +2,7 @@
 title: Neal Miller 
 email: neal@nealmiller.io
 description: > # this means to ignore newlines until "baseurl:"
-    The personal website of Neal Miller, Ph.D., a Houston, TX-based software engineer.
+    The personal website of Neal Miller, Ph.D., an engineering leader focused on AI-first engineering and product delivery.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://nealmiller.io" # the base hostname & protocol for your site
 github_username: wlmiller 
